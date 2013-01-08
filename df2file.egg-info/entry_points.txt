@@ -1,0 +1,3 @@
+[console_scripts]
+df2csv = df2file.df_to_file:append_df_to_csv
+df2excel = df2file.df_to_file:append_df_to_excel
