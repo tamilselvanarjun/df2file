@@ -45,7 +45,7 @@ openpyxl
 
 #### Contributing:
 
-If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
+Please raise an issue or make a pull request if you discover any problems or have ideas for enhancements.
 
 #### License:
 This project is licensed under the MIT License - see the LICENSE file for details.
