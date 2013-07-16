@@ -8,7 +8,7 @@ A Python utility designed for efficiently appending Pandas DataFrames to a singl
 
 - **Sheet Customization:** Specify sheet names, starting row positions, and other options to customize the placement of each DataFrame within the Excel file.
 
-- **Excel File Management:** If the specified Excel file does not exist, the utility will create it. If it does exist, the utility will append DataFrames to existing sheets or create new sheets as needed.
+- **Excel File Management:** The tool will create the required Excel file if it doesn't already exist. The tool will add DataFrames to already-existing sheets or generate new ones as needed if it does.
 
 
 ### Installation:
