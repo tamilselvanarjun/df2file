@@ -1,5 +1,6 @@
 ### Project : df2file:
-A Python tool made to quickly add several Pandas DataFrames, each in its own sheet, to a single Excel file.
+A Python utility designed for efficiently appending Pandas DataFrames to a single Excel file, each in a separate sheet.
+
 
 #### Features:
 
@@ -7,7 +8,8 @@ A Python tool made to quickly add several Pandas DataFrames, each in its own she
 
 - **Sheet Customization:** Specify sheet names, starting row positions, and other options to customize the placement of each DataFrame within the Excel file.
 
-- **Excel File Management:** If the specified Excel file does not exist, the utility will create it. If it does exist, the utility will append DataFrames to existing sheets or create new sheets as needed.
+- **Excel File Management:** 
+If the designated Excel file is not present, the utility will generate it. However, if the file already exists, the utility will either add DataFrames to existing sheets or establish new sheets accordingly.
 
 
 ### Installation:
