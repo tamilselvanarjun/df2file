@@ -12,10 +12,10 @@ setup(
         'openpyxl',
     ],
     entry_points={
-    'console_scripts': [
-        'df2excel=df2file.df_to_file:append_df_to_excel',
-        'df2csv=df2file.df_to_file:append_df_to_csv',
-    ],
+       'console_scripts': [
+            'df2excel = df2file.df_to_file:append_df_to_excel',
+            'df2csv = df2file.df_to_file:append_df_to_csv',
+        ],
     },
     author='Tamilselvan Arjunan',
     author_email='nishantamil@gmail.com',
