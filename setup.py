@@ -20,8 +20,8 @@ setup(
     author='Tamilselvan Arjunan',
     author_email='nishantamil@gmail.com',
     description='A utility for appending DataFrames to Excel/CSV files.',
-    long_description=long_description,  # Add this line
-    long_description_content_type='text/markdown',  # Specify the content type if using Markdown
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/arjunlimat/df2file',
     classifiers=[
         'Programming Language :: Python :: 3',
