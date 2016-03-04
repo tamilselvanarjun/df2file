@@ -11,7 +11,7 @@ A Python utility designed for efficiently appending Pandas DataFrames to a singl
 - **Excel File Management:** If the specified Excel file does not exist, the utility will create it. If it does exist, the utility will append DataFrames to existing sheets or create new sheets as needed.
 
 
-### Installation:
+<!-- ### Installation:
 url = https://pypi.org/project/df-to-excel-appender/
 
 #### Install the package using pip:
@@ -26,7 +26,7 @@ url = https://pypi.org/project/df-to-excel-appender/
 #### Example usage:
 output_file = 'output.xlsx'
 your_dataframe = pd.DataFrame({'Column1': [1, 2, 3], 'Column2': ['A', 'B', 'C']})
-append_df_to_excel(output_file, your_dataframe, sheet_name='Sheet1', index=False)
+append_df_to_excel(output_file, your_dataframe, sheet_name='Sheet1', index=False) -->
 
 #### Run the script from the command line:
 
