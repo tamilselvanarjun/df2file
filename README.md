@@ -28,7 +28,7 @@ output_file = 'output.xlsx'
 your_dataframe = pd.DataFrame({'Column1': [1, 2, 3], 'Column2': ['A', 'B', 'C']})
 append_df_to_excel(output_file, your_dataframe, sheet_name='Sheet1', index=False)
 
-#### Run the script from the command line:
+<!-- #### Run the script from the command line:
 
 df_to_excel_appender input.csv -o output.xlsx
  
@@ -41,7 +41,7 @@ df_to_excel_appender input.csv -o output.xlsx
 
 #### Dependencies:
 pandas
-openpyxl
+openpyxl -->
 
 #### Contributing:
 
