@@ -22,7 +22,7 @@ url = https://pypi.org/project/df-to-excel-appender/
 
 3.from df2file.df_to_file import append_df_to_csv
 
-<!-- #### Use the function to append a DataFrame to an Excel file:
+#### Use the function to append a DataFrame to an Excel file:
 #### Example usage:
 output_file = 'output.xlsx'
 your_dataframe = pd.DataFrame({'Column1': [1, 2, 3], 'Column2': ['A', 'B', 'C']})
@@ -37,7 +37,7 @@ df_to_excel_appender input.csv -o output.xlsx
 
 -i, --input: Input CSV file.
 
--o, --output: Output Excel file. -->
+-o, --output: Output Excel file.
 
 #### Dependencies:
 pandas
