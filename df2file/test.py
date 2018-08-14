@@ -5,18 +5,27 @@ import os
 from your_module_name import append_df_to_excel, append_df_to_csv
 
 class TestAppendToExcelAndCsv(unittest.TestCase):
+    """
+    Test cases for append_df_to_excel and append_df_to_csv functions.
+    """
 
-    # Test case for appending DataFrame to existing Excel file
-    def test_append_to_excel_existing_file(self):
+    def setUp(self):
+        """
+        Set up test environment.
+        """
         # Create a sample DataFrame
-        data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
-        df = pd.DataFrame(data)
+        self.data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
+        self.df = pd.DataFrame(self.data)
 
+    def test_append_to_excel_existing_file(self):
+        """
+        Test appending DataFrame to an existing Excel file.
+        """
         # Define the existing Excel file
         excel_file = 'test_excel_file.xlsx'
 
         # Append DataFrame to Excel
-        append_df_to_excel(excel_file, df, sheet_name='Sheet1')
+        append_df_to_excel(excel_file, self.df, sheet_name='Sheet1')
 
         # Check if the Excel file exists
         self.assertTrue(os.path.isfile(excel_file))
@@ -25,17 +34,15 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         with pd.ExcelFile(excel_file) as xls:
             self.assertIn('Sheet1', xls.sheet_names)
 
-    # Test case for appending DataFrame to existing CSV file
     def test_append_to_csv_existing_file(self):
-        # Create a sample DataFrame
-        data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
-        df = pd.DataFrame(data)
-
+        """
+        Test appending DataFrame to an existing CSV file.
+        """
         # Define the existing CSV file
         csv_file = 'test_csv_file.csv'
 
         # Append DataFrame to CSV
-        append_df_to_csv(csv_file, df, header=False)
+        append_df_to_csv(csv_file, self.df, header=False)
 
         # Check if the CSV file exists
         self.assertTrue(os.path.isfile(csv_file))
@@ -44,6 +51,16 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         df_read = pd.read_csv(csv_file, header=None)
         expected_data = [[1, 2, 3], [4, 5, 6]]
         self.assertTrue(df_read.equals(pd.DataFrame(expected_data)))
+
+    def tearDown(self):
+        """
+        Clean up test environment.
+        """
+        # Delete test files after each test
+        if os.path.isfile('test_excel_file.xlsx'):
+            os.remove('test_excel_file.xlsx')
+        if os.path.isfile('test_csv_file.csv'):
+            os.remove('test_csv_file.csv')
 
 if __name__ == '__main__':
     unittest.main()
