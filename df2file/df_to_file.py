@@ -69,3 +69,10 @@ def append_df_to_csv(filename, df, header=True, index=False, **to_csv_kwargs):
 
     # append to existing CSV file
     df.to_csv(filename, mode='a', header=header, index=index, **to_csv_kwargs)
+
+
+#output_csv = 'output.csv'
+#df = pd.DataFrame({'Column1': [4, 5, 6], 'Column2': ['D', 'E', 'F']})
+
+# Append DataFrame to CSV file without writing header and index
+#append_df_to_csv(output_csv, df, header=False, index=False)
