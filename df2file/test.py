@@ -44,7 +44,7 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         # Append DataFrame to CSV
         append_df_to_csv(csv_file, self.df, header=False)
 
-        
+        # Check if the CSV file exists
         self.assertTrue(os.path.isfile(csv_file))
 
         # Check if the CSV file contains the expected data
