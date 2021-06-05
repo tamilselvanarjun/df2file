@@ -21,7 +21,7 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         """
         Test appending DataFrame to an existing Excel file.
         """
-       
+        # Define the existing Excel file
         excel_file = 'test_excel_file.xlsx'
 
         # Append DataFrame to Excel
