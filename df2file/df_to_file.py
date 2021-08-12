@@ -31,7 +31,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
     writer = pd.ExcelWriter(filename, engine='openpyxl', mode='a')
     writer.book = load_workbook(filename)
 
-    
+    # Get the last row in the sheet or set startrow if not specified
     if startrow is None and sheet_name in writer.book.sheetnames:
         startrow = writer.book[sheet_name].max_row
 
