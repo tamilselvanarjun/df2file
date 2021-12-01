@@ -12,7 +12,7 @@ setup(
         'openpyxl',
     ],
     entry_points={
-        'console_scripts': [
+       'console_scripts': [
             'df2excel = df2file.df_to_file:append_df_to_excel',
             'df2csv = df2file.df_to_file:append_df_to_csv',
         ],
@@ -20,8 +20,8 @@ setup(
     author='Tamilselvan Arjunan',
     author_email='nishantamil@gmail.com',
     description='A utility for appending DataFrames to Excel/CSV files.',
-    long_description=long_description,
-    long_description_content_type='text/markdown',
+    long_description=long_description,  # Add this line
+    long_description_content_type='text/markdown',  # Specify the content type if using Markdown
     url='https://github.com/arjunlimat/df2file',
     classifiers=[
         'Programming Language :: Python :: 3',
