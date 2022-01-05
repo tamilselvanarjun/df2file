@@ -18,7 +18,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
     Returns:
     - None
     """
-    # Ensure filename ends with '.xlsx'
+  
     if not filename.endswith('.xlsx'):
         filename = filename + '.xlsx'
 
