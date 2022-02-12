@@ -13,7 +13,7 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         """
         Set up test environment.
         """
-       
+        # Create a sample DataFrame
         self.data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
         self.df = pd.DataFrame(self.data)
 
@@ -21,7 +21,7 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         """
         Test appending DataFrame to an existing Excel file.
         """
-        # Define the existing Excel file
+        
         excel_file = 'test_excel_file.xlsx'
 
         # Append DataFrame to Excel
