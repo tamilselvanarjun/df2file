@@ -56,7 +56,7 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         """
         Clean up test environment.
         """
-        # Delete test files after each test
+        
         if os.path.isfile('test_excel_file.xlsx'):
             os.remove('test_excel_file.xlsx')
         if os.path.isfile('test_csv_file.csv'):
