@@ -41,7 +41,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
         writer.book.remove(writer.book.worksheets[idx])
         writer.book.create_sheet(sheet_name, idx)
 
-    # Copy existing sheets
+    
     writer.sheets = {ws.title: ws for ws in writer.book.worksheets}
 
     # Write DataFrame to Excel
