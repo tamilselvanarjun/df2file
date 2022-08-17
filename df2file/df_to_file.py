@@ -35,7 +35,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
     if startrow is None and sheet_name in writer.book.sheetnames:
         startrow = writer.book[sheet_name].max_row
 
-    
+    # Truncate sheet if specified
     if truncate_sheet and sheet_name in writer.book.sheetnames:
         idx = writer.book.sheetnames.index(sheet_name)
         writer.book.remove(writer.book.worksheets[idx])
