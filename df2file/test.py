@@ -38,10 +38,10 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         """
         Test appending DataFrame to an existing CSV file.
         """
-        # Define the existing CSV file
+        # Define the existing CSV file.
         csv_file = 'test_csv_file.csv'
 
-        # Append DataFrame to CSV
+        # Append DataFrame to CSV.
         append_df_to_csv(csv_file, self.df, header=False)
 
         # Check if the CSV file exists
