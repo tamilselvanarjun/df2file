@@ -24,7 +24,7 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         # Define the existing Excel file
         excel_file = 'test_excel_file.xlsx'
 
-        
+        # Append DataFrame to Excel
         append_df_to_excel(excel_file, self.df, sheet_name='Sheet1')
 
         # Check if the Excel file exists
