@@ -47,7 +47,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
     # Write DataFrame to Excel
     df.to_excel(writer, sheet_name, startrow=startrow, **to_excel_kwargs)
 
-    
+    # Save the workbook
     writer.save()
 
 
@@ -64,7 +64,7 @@ def append_df_to_csv(filename, df, header=True, index=False, **to_csv_kwargs):
     Returns:
     - None
     """
-    # Ensure filename ends with '.csv'
+    
     if not filename.endswith('.csv'):
         filename = filename + '.csv'
 
