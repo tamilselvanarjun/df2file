@@ -27,7 +27,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
         df.to_excel(filename, sheet_name=sheet_name, startrow=startrow if startrow is not None else 0, **to_excel_kwargs)
         return
 
-   
+    # Open existing workbook
     writer = pd.ExcelWriter(filename, engine='openpyxl', mode='a')
     writer.book = load_workbook(filename)
 
