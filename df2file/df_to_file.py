@@ -68,7 +68,7 @@ def append_df_to_csv(filename, df, header=True, index=False, **to_csv_kwargs):
     if not filename.endswith('.csv'):
         filename = filename + '.csv'
 
-    
+    # Append DataFrame to CSV file
     df.to_csv(filename, mode='a', header=header, index=index, **to_csv_kwargs)
 
 
