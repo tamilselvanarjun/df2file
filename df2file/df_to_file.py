@@ -22,7 +22,7 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
     if not filename.endswith('.xlsx'):
         filename = filename + '.xlsx'
 
-    
+    # Save DataFrame to Excel if file doesn't exist
     if not os.path.isfile(filename):
         df.to_excel(filename, sheet_name=sheet_name, startrow=startrow if startrow is not None else 0, **to_excel_kwargs)
         return
