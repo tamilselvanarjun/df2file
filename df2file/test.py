@@ -47,7 +47,7 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         # Check if the CSV file exists
         self.assertTrue(os.path.isfile(csv_file))
 
-        
+        # Check if the CSV file contains the expected data
         df_read = pd.read_csv(csv_file, header=None)
         expected_data = [[1, 2, 3], [4, 5, 6]]
         self.assertTrue(df_read.equals(pd.DataFrame(expected_data)))
