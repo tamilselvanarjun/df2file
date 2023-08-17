@@ -30,7 +30,7 @@ class TestAppendToExcelAndCsv(unittest.TestCase):
         # Check if the Excel file exists
         self.assertTrue(os.path.isfile(excel_file))
 
-        
+        # Check if the sheet 'Sheet1' exists in the Excel file
         with pd.ExcelFile(excel_file) as xls:
             self.assertIn('Sheet1', xls.sheet_names)
 
