@@ -1,0 +1,2 @@
+[console_scripts]
+df_to_excel_appender = df_to_excel_appender.df_to_excel:append_df_to_excel_cli
