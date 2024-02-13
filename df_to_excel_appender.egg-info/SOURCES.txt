@@ -1,9 +1,0 @@
-LICENSE
-README.md
-setup.py
-df_to_excel_appender.egg-info/PKG-INFO
-df_to_excel_appender.egg-info/SOURCES.txt
-df_to_excel_appender.egg-info/dependency_links.txt
-df_to_excel_appender.egg-info/entry_points.txt
-df_to_excel_appender.egg-info/requires.txt
-df_to_excel_appender.egg-info/top_level.txt

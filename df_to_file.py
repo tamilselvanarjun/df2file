@@ -53,3 +53,26 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
 	
 	
 #append_df_to_excel(output, df, all_div.h1.text, index=False)
+
+
+def append_df_to_csv(filename, df, header=True, index=False, **to_csv_kwargs):
+    # CSV file doesn't exist - saving and exiting
+    if not filename.endswith('.csv'):
+        filename = filename + '.csv'
+    if not os.path.isfile(filename):
+        df.to_csv(filename, header=header, index=index, **to_csv_kwargs)
+        return
+
+    # ignore [mode] parameter if it was passed
+    if 'mode' in to_csv_kwargs:
+        to_csv_kwargs.pop('mode')
+
+    # append to existing CSV file
+    df.to_csv(filename, mode='a', header=header, index=index, **to_csv_kwargs)
+
+
+#output_csv = 'output.csv'
+#df = pd.DataFrame({'Column1': [4, 5, 6], 'Column2': ['D', 'E', 'F']})
+
+# Append DataFrame to CSV file without writing header and index
+#append_df_to_csv(output_csv, df, header=False, index=False)
