@@ -1,4 +1,4 @@
-### Project : df_to_excel_appender:
+### Project : df2file:
 A Python utility designed for efficiently appending Pandas DataFrames to a single Excel file, each in a separate sheet.
 
 #### Features:
@@ -15,9 +15,11 @@ url = https://pypi.org/project/df-to-excel-appender/
 
 #### Install the package using pip:
 
-1.pip install df-to-excel-appender
+1.pip install df2file
 
-2.from df_to_excel_appender.df_to_excel import append_df_to_excel
+2.from df2file.df_to_file import append_df_to_excel
+
+3.from df2file.df_to_file import append_df_to_csv
 
 #### Use the function to append a DataFrame to an Excel file:
 #### Example usage:
