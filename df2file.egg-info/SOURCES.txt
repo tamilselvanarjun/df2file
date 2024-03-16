@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+df2file.egg-info/PKG-INFO
+df2file.egg-info/SOURCES.txt
+df2file.egg-info/dependency_links.txt
+df2file.egg-info/entry_points.txt
+df2file.egg-info/requires.txt
+df2file.egg-info/top_level.txt
